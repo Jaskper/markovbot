@@ -1,0 +1,15 @@
+{
+  "name": "latinhighlighting",
+  "version": "0.1.0",
+  "description": "Highlights latin",
+  "main": "server.js",
+  "author": "Mostafa Eweda <mo.eweda@gmail.com>",
+  "dependencies": {
+    "express": "4.14.0",
+    "socket.io": "1.4.8",
+    "irc":"0.5.0",
+    "markov": "0.0.7",
+    "request": "2.73.0",
+    "tmi.js": "1.0.0"
+  }
+}

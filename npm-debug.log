@@ -1,0 +1,102 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/v0.10.35/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/v0.10.35/bin/npm',
+1 verbose cli   'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 warn package.json latinhighlighting@0.1.0 No repository field.
+5 warn package.json latinhighlighting@0.1.0 No README data
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ '/home/ubuntu/workspace',
+7 verbose install   [ 'express', 'socket.io', 'irc', 'markov', 'request', 'tmi.js' ] ]
+8 info preinstall latinhighlighting@0.1.0
+9 verbose readDependencies using package.json deps
+10 verbose cache add [ 'tmi.js@1.0.0', null ]
+11 verbose cache add name=undefined spec="tmi.js@1.0.0" args=["tmi.js@1.0.0",null]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'tmi.js@1.0.0',
+12 verbose parsed url   path: 'tmi.js@1.0.0',
+12 verbose parsed url   href: 'tmi.js@1.0.0' }
+13 verbose cache add name="tmi.js" spec="1.0.0" args=["tmi.js","1.0.0"]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: '1.0.0',
+14 verbose parsed url   path: '1.0.0',
+14 verbose parsed url   href: '1.0.0' }
+15 verbose addNamed [ 'tmi.js', '1.0.0' ]
+16 verbose addNamed [ '1.0.0', '1.0.0' ]
+17 verbose already installed skipping express@4.14.0 /home/ubuntu/workspace
+18 verbose already installed skipping socket.io@1.4.8 /home/ubuntu/workspace
+19 verbose already installed skipping irc@0.5.0 /home/ubuntu/workspace
+20 verbose already installed skipping markov@0.0.7 /home/ubuntu/workspace
+21 verbose already installed skipping request@2.73.0 /home/ubuntu/workspace
+22 silly lockFile 480a5e42-tmi-js-1-0-0 tmi.js@1.0.0
+23 verbose lock tmi.js@1.0.0 /home/ubuntu/.npm/480a5e42-tmi-js-1-0-0.lock
+24 verbose request where is /tmi.js
+25 verbose request registry https://registry.npmjs.org/
+26 verbose request id a42279677263c675
+27 verbose url raw /tmi.js
+28 verbose url resolving [ 'https://registry.npmjs.org/', './tmi.js' ]
+29 verbose url resolved https://registry.npmjs.org/tmi.js
+30 verbose request where is https://registry.npmjs.org/tmi.js
+31 info trying registry request attempt 1 at 23:45:10
+32 verbose etag "89CPWL6WQKL4K9TXYFB7YBGO5"
+33 http GET https://registry.npmjs.org/tmi.js
+34 http 304 https://registry.npmjs.org/tmi.js
+35 silly registry.get cb [ 304,
+35 silly registry.get   { date: 'Mon, 18 Jul 2016 23:45:10 GMT',
+35 silly registry.get     via: '1.1 varnish',
+35 silly registry.get     'cache-control': 'max-age=300',
+35 silly registry.get     etag: '"89CPWL6WQKL4K9TXYFB7YBGO5"',
+35 silly registry.get     age: '0',
+35 silly registry.get     connection: 'keep-alive',
+35 silly registry.get     'x-served-by': 'cache-ord1747-ORD',
+35 silly registry.get     'x-cache': 'MISS',
+35 silly registry.get     'x-cache-hits': '0',
+35 silly registry.get     'x-timer': 'S1468885510.783925,VS0,VE142',
+35 silly registry.get     vary: 'Accept-Encoding' } ]
+36 verbose etag https://registry.npmjs.org/tmi.js from cache
+37 silly lockFile 061392dd-pmjs-org-tmi-js-tmi-js-1-0-0-tgz https://registry.npmjs.org/tmi.js/-/tmi.js-1.0.0.tgz
+38 verbose lock https://registry.npmjs.org/tmi.js/-/tmi.js-1.0.0.tgz /home/ubuntu/.npm/061392dd-pmjs-org-tmi-js-tmi-js-1-0-0-tgz.lock
+39 verbose addRemoteTarball [ 'https://registry.npmjs.org/tmi.js/-/tmi.js-1.0.0.tgz',
+39 verbose addRemoteTarball   '7d535c6c66df71086ccc157f41b08c167c75df78' ]
+40 info retry fetch attempt 1 at 23:45:10
+41 verbose fetch to= /tmp/npm-1972-K4sOBsK2/registry.npmjs.org/tmi.js/-/tmi.js-1.0.0.tgz
+42 http GET https://registry.npmjs.org/tmi.js/-/tmi.js-1.0.0.tgz
+43 http 200 https://registry.npmjs.org/tmi.js/-/tmi.js-1.0.0.tgz
+44 silly lockFile 061392dd-pmjs-org-tmi-js-tmi-js-1-0-0-tgz https://registry.npmjs.org/tmi.js/-/tmi.js-1.0.0.tgz
+45 silly lockFile 061392dd-pmjs-org-tmi-js-tmi-js-1-0-0-tgz https://registry.npmjs.org/tmi.js/-/tmi.js-1.0.0.tgz
+46 silly lockFile 480a5e42-tmi-js-1-0-0 tmi.js@1.0.0
+47 silly lockFile 480a5e42-tmi-js-1-0-0 tmi.js@1.0.0
+48 error Error: EACCES, mkdir '/home/ubuntu/.npm/tmi.js/1.0.0'
+48 error  { [Error: EACCES, mkdir '/home/ubuntu/.npm/tmi.js/1.0.0']
+48 error   errno: 3,
+48 error   code: 'EACCES',
+48 error   path: '/home/ubuntu/.npm/tmi.js/1.0.0',
+48 error   parent: 'latinhighlighting' }
+49 error Please try running this command again as root/Administrator.
+50 error System Linux 4.2.0-c9
+51 error command "/home/ubuntu/.nvm/v0.10.35/bin/node" "/home/ubuntu/.nvm/v0.10.35/bin/npm" "install"
+52 error cwd /home/ubuntu/workspace
+53 error node -v v0.10.35
+54 error npm -v 1.4.28
+55 error path /home/ubuntu/.npm/tmi.js/1.0.0
+56 error code EACCES
+57 error errno 3
+58 error stack Error: EACCES, mkdir '/home/ubuntu/.npm/tmi.js/1.0.0'
+59 verbose exit [ 3, true ]

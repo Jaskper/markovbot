@@ -1,0 +1,51 @@
+#everything{
+    display: block;
+    position: absolute;
+    left: 23%;
+}
+#title{
+    font-size: 200px;
+    display: inline;
+}
+#current_watchers_label{
+    display: inline;
+    position: relative;
+    left: 30%;
+}
+#current_watchers{
+    display: inline-block;
+    font-weight: bold;
+    position: relative;
+    left: 30%;
+}
+#instructions{
+    position: relative;
+    left: 30%;
+}
+
+#twitch_icon{
+    float: left;
+}
+
+#or_div{
+    font-weight: bold;
+    position: relative;
+    left: 45%;
+}
+
+#request_here_label{
+    position: relative;
+    display: inline;
+    left: 30%;
+}
+
+#request_button{
+    position: relative;
+    left: 30%;
+}
+
+#infoChart{
+    display: block;
+    position: relative;
+    left: 26%;
+}
