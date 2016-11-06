@@ -44,8 +44,16 @@
     left: 30%;
 }
 
+#distributionLabel{
+    position: relative;
+    font-weight: bold;
+    left: 30%;
+}
+
 #infoChart{
     display: block;
     position: relative;
     left: 26%;
 }
+
+

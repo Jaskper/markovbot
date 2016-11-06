@@ -72,20 +72,33 @@ $(document).ready(function(){
         animateScale : false,
         legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
     };
-    var channels = ['reynad27','forsenlol','nl_Kripp','tsm_theoddone','sodapoppin','summit1g', 'reckful', 'tidesoftime'];
+    var channels = ['#reynad27','#forsenlol','#nl_kripp','#nightblue3','#sodapoppin','#summit1g', '#c9sneaky', '#tidesoftime', '#trick2g', '#lirik', '#imaqtpie', '#mushisgosu'];
     var colors = ["#FF9900", "#B30077","#E6FF00", "#E8FF1A", "#00FF1A", "#4DFF5E","#0066FF", "#1A75FF", "#1A00FF", "#301AFF", "#B13DFF", "#BC57FF", "#FF1A00", "#FF4733","#FF14B1", "#FF2EB9"];
     
     var ctx = document.getElementById("infoChart").getContext("2d");
     var myNewChart = new Chart(ctx).Doughnut(data, options);
     
-
-    socket.on('newCurrentInfo', function(channels){
-        if(channels.length < 1){
+    
+    socket.on('newCurrentInfo', function(channelsIn){
+        if(channelsIn.length < 1){
             document.getElementById("current_watchers").innerHTML = "none";
         }else{
-            document.getElementById("current_watchers").innerHTML = channels;
+            document.getElementById("current_watchers").innerHTML = channelsIn;
+            /*
+            var channelsSplit = channelsIn.split(', ');
+            
+            console.log('SPLIT LENGTH:' + channelsSplit.length);
+            var replace = "";
+            
+            for(var i=0; i<channelsSplit.length; i++){
+                replace += "<div href=\"https://twitch.tv/" + channelsSplit[i] + "\">" + channelsSplit[i] + "   </div>";
+            }
+            
+            document.getElementById("current_watchers").innerHTML = replace;
+            */
         }
     });
+    
     
     document.getElementById("request_button").addEventListener('click', function(){
         socket.emit('request_markov'); 

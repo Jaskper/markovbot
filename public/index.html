@@ -5,7 +5,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="/socket.io/socket.io.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/Colors.js/1.2.3/colors.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Colors.js/1.2.3/colors.min.js"></script>
         <script src="main.js"></script>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -17,6 +17,8 @@
             <div id='instructions'>Type !markov in chat to get a response</div>
             <div id='or_div'>OR</div>
             <div id='request_here_label'>Request a markov chain (combined) here: </div><input type='button' id="request_button" value="Generate">
+            <br> <br> <br>
+            <div id="distributionLabel">Which channels are contributing most to MarkovBot: </div>
             <canvas id='infoChart' width="400" height="400"></canvas>
         </div>
 
